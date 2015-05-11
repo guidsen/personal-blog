@@ -1,1 +1,48 @@
+@import "bootstrap/bootstrap";
 
+@font-family-base: 'Lora', serif;
+
+.profile {
+  font-size: 13px;
+  margin: 25px 0px 50px 0px;
+  .profile-info {
+    padding: 9px 0px;
+    p:last-of-type {
+      margin: 0;
+    }
+    a {
+      color: #4ECAB8;
+      &:hover {
+        color: #4ECAB8;
+      }
+    }
+  }
+  .avatar {
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    margin-right: 30px;
+  }
+}
+
+.posts-container {
+  .post {
+    .post-heading {
+      margin-bottom: 20px;
+      .post-title {
+        margin: 0 0 5px 0;
+      }
+    }
+    .post-content {
+      font-size: 16px;
+      line-height: 25px;
+      pre {
+        background-color: #F6F6F6;
+        margin: 20px 0px;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+    }
+  }
+}
