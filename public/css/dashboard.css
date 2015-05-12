@@ -6481,6 +6481,9 @@ button.close {
 .label {
   font-weight: 300;
 }
+.label.preview a {
+  color: #fff;
+}
 .login-panel {
   margin-top: 60px;
 }
@@ -6489,6 +6492,10 @@ button.close {
 }
 .dropdown:hover .dropdown-menu {
   display: block;
+}
+.actions {
+  overflow: hidden;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=dashboard.css.map */

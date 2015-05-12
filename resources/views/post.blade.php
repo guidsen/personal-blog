@@ -4,6 +4,9 @@
 
     <section class="actions">
         <a href="{{ route('feed') }}" class="btn btn-primary"><i class="fa fa-level-up fa-lg"></i> Back to overview</a>
+        @if(Auth::check() && $post->published == 0)
+            <a href="{{ route('feed') }}" class="btn btn-danger disabled">Nog niet gepubliceerd</a>
+        @endif
     </section>
 
     <section class="posts-container">
@@ -33,11 +36,14 @@
         var disqus_identifier = '{{ $post->disqus_id }}';
 
         /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        (function () {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
     </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments
+            powered by Disqus.</a></noscript>
 @stop

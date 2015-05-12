@@ -6489,6 +6489,12 @@ button.close {
 .btn.btn-primary:active {
   box-shadow: #35b09e 0px 2px 0px;
 }
+.btn.btn-danger {
+  box-shadow: #c9302c 0px 2px 0px;
+}
+.btn.btn-danger:active {
+  box-shadow: #c9302c 0px 2px 0px;
+}
 .btn.btn-default {
   border: 2px solid #E0E0E0;
   color: #D1D1D1;

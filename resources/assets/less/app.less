@@ -5,16 +5,24 @@
 @border-radius-base: 2px;
 @btn-primary-bg: #4ECAB8;
 
+.btn-box-shadow(@color) {
+  box-shadow: darken(@color, 10%) 0px 2px 0px;
+  &:active {
+    box-shadow: darken(@color, 10%) 0px 2px 0px;
+  }
+}
+
 .btn {
   font-family: 'Open Sans', sans-serif;
   border: none;
   padding: 8px 15px 6px;
 
   &.btn-primary {
-    box-shadow: darken(@btn-primary-bg, 10%) 0px 2px 0px;
-    &:active {
-      box-shadow: darken(@btn-primary-bg, 10%) 0px 2px 0px;
-    }
+    .btn-box-shadow(@btn-primary-bg);
+  }
+
+  &.btn-danger {
+    .btn-box-shadow(@btn-danger-bg);
   }
 
   &.btn-default {
