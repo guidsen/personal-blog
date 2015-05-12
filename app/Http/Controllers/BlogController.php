@@ -13,7 +13,7 @@ class BlogController extends Controller
 
     public function show($slug)
     {
-        $post = (Auth::check()) ? Post::whereSlug($slug)->first() : Post::published()->whereSlug($slug)->get();
+        $post = (Auth::check()) ? Post::whereSlug($slug)->first() : Post::published()->whereSlug($slug)->first();
         return view('post')->withPost($post);
     }
 
