@@ -6,7 +6,9 @@
 </head>
 <body>
 
-@include('dashboard.navbar')
+@if(Auth::check())
+    @include('dashboard.navbar')
+@endif
 
 <div class="wrapper @yield('container-class', 'col-md-8 col-md-offset-2')">
     @yield('content')

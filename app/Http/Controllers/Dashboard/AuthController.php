@@ -19,7 +19,7 @@ class AuthController extends Controller
     public function postLogin(LoginRequest $request, Guard $auth)
     {
         if ($auth->attempt($request->only('email', 'password'))) {
-            return 'Succesvol';
+            return redirect()->route('dashboard.index');
         }
 
         return redirect()->back()->withErrors(['message' => 'Credentials does not match.']);
