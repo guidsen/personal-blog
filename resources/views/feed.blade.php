@@ -1,5 +1,12 @@
 @extends('template')
 
+@section('title', 'A blog written by Guido Schmitz')
+@section('description', '
+On this blog I will regularly post items about my experiences with Laravel and Lumen.
+You can also find items regarding the latest coding trends.
+If you want to be up to date, this blog should cover your needs!
+')
+
 @section('content')
 
     <section class="posts-container">

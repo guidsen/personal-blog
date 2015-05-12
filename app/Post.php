@@ -8,7 +8,7 @@ use Parsedown;
 class Post extends Model
 {
 
-    protected $fillable = ['disqus_id', 'title', 'body', 'published'];
+    protected $fillable = ['disqus_id', 'title', 'body', 'description', 'published'];
     protected $appends = ['html_body'];
 
     public function scopePublished($query)

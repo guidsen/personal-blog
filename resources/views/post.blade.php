@@ -1,5 +1,8 @@
 @extends('template')
 
+@section('title', $post->title)
+@section('description', $post->description)
+
 @section('content')
 
     <section class="actions">
@@ -12,7 +15,7 @@
     <section class="posts-container">
         <article class="post">
             <div class="post-heading">
-                <h2 class="post-title">{{ $post->title }}</h2>
+                <h1 class="post-title">{{ $post->title }}</h1>
 
                 <div class="post-info">{{ $post->created_at }}</div>
             </div>
@@ -24,8 +27,8 @@
 
     <section class="social pull-right">
         <div class="text">Share this post</div>
-        <a class="facebook" href="#"><i class="fa fa-facebook fa-lg"></i></a>
-        <a class="twitter" href="#"><i class="fa fa-twitter fa-lg"></i></a>
+        <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(Request::url()) }}" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
+        <a class="twitter" href="https://twitter.com/intent/tweet?url={{ urlencode(Request::url()) }}&text={{ urlencode($post->title) }}%20at&via=guidsen" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
     </section>
 
     <div id="disqus_thread"></div>

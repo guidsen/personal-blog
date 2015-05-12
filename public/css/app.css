@@ -6478,6 +6478,10 @@ button.close {
     display: none !important;
   }
 }
+h1,
+h2 {
+  font-size: 30px;
+}
 .btn {
   font-family: 'Open Sans', sans-serif;
   border: none;

@@ -12,7 +12,7 @@
         </p>
 
         <p>
-            You can find me at twitter <a href="#">@guidsen</a> or connect me via <a href="#">LinkedIn</a>.
+            You can find me at twitter <a href="https://twitter.com/guidsen" target="_blank">@guidsen</a> or connect me via <a href="https://www.linkedin.com/in/guidschmitz" target="_blank">LinkedIn</a>.
         </p>
     </div>
 </section>
