@@ -1,5 +1,5 @@
 <section class="profile clearfix">
-    <img class="pull-left avatar" src="images/myself.png" alt="Photo of myself">
+    <img class="pull-left avatar hidden-xs" src="images/myself.png" alt="Photo of myself">
 
     <div class="profile-info">
         <p>
