@@ -5,7 +5,7 @@
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/prism.css" rel="stylesheet" type="text/css">
+    <link href="css/prism.min.css" rel="stylesheet" type="text/css">
     <link href="css/app.css" rel="stylesheet" type="text/css">
     <meta name="description" content="@yield('description')">
     <meta name="keywords" content="Laravel, Lumen, Coding, Blog, Architecture, PHP">
