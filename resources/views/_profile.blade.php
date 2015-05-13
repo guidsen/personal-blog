@@ -1,10 +1,10 @@
 <section class="profile clearfix">
-    <img class="pull-left avatar" src="images/myself.png">
+    <img class="pull-left avatar" src="images/myself.png" alt="Photo of myself">
 
     <div class="profile-info">
         <p>
             Hi, my name is Guido Schmitz. <br>
-            I'm a web developer trying to keep up with the latest coding trends.
+            I'm a web developer and Laravel fanboy trying to keep up with the latest coding trends.
         </p>
 
         <p>
