@@ -8,7 +8,28 @@ If you want to be up to date, this blog should cover your needs!
 ')
 
 @section('content')
+    <div class="newsletter-wrapper">
+        <h3 class="title">Stay up to date</h3>
 
+        <div class="row">
+            <form method="POST" action="{{ url('/subscribe') }}" class="col-md-6 newsletter-signup-form">
+                {!! $errors->first('email', '
+                <div class="alert alert-danger">:message</div>
+                ') !!}
+                @if(session()->has('message'))
+                    <div class="alert alert-success">{{ session('message') }}</div>
+                @endif
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+                <div class="input-group">
+                    <input type="text" name="email" class="form-control" placeholder="Enter your email address.." required>
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" type="submit">Sign up</button>
+                  </span>
+                </div>
+            </form>
+        </div>
+    </div>
     <div class="posts-container">
         @foreach($posts as $post)
             <article class="post">

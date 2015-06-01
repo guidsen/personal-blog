@@ -12,8 +12,32 @@
   }
 }
 
+.alert {
+  padding: 7px 15px 5px;
+  margin-bottom: 10px;
+}
+
 h1, h2 {
   font-size: 30px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: @btn-primary-bg;
+}
+
+.input-group {
+  .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group {
+    margin-left: 0px;
+  }
+  .form-control {
+    padding-top: 8px;
+    border-right: 0px;
+  }
+  .btn.btn-primary {
+    box-shadow: none;
+    padding: 7px 20px;
+  }
 }
 
 .btn {
@@ -154,6 +178,11 @@ h1, h2 {
       }
     }
   }
+}
+
+.newsletter-wrapper {
+  overflow: hidden;
+  padding-bottom: 40px;
 }
 
 #disqus_thread {

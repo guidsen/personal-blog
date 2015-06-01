@@ -16,6 +16,8 @@ Route::get('/', ['as' => 'feed', 'uses' => 'BlogController@index']);
 Route::get('dashboard/login', 'Dashboard\AuthController@login');
 Route::post('dashboard/login', 'Dashboard\AuthController@postLogin');
 
+Route::post('subscribe', 'BlogController@subscribe');
+
 Route::group(['prefix' => 'dashboard', 'middleware' => 'auth', 'namespace' => 'Dashboard'], function () {
     Route::get('/logout', 'AuthController@logout');
     Route::get('/', ['as' => 'dashboard.index', 'uses' => 'PostsController@index']);

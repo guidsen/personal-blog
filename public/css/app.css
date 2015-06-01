@@ -6478,9 +6478,29 @@ button.close {
     display: none !important;
   }
 }
+.alert {
+  padding: 7px 15px 5px;
+  margin-bottom: 10px;
+}
 h1,
 h2 {
   font-size: 30px;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: #4ecab8;
+}
+.input-group .input-group-btn:last-child > .btn,
+.input-group .input-group-btn:last-child > .btn-group {
+  margin-left: 0px;
+}
+.input-group .form-control {
+  padding-top: 8px;
+  border-right: 0px;
+}
+.input-group .btn.btn-primary {
+  box-shadow: none;
+  padding: 7px 20px;
 }
 .btn {
   font-family: 'Open Sans', sans-serif;
@@ -6618,6 +6638,10 @@ h2 {
   color: #fff;
   top: 13px;
   left: 9px;
+}
+.newsletter-wrapper {
+  overflow: hidden;
+  padding-bottom: 40px;
 }
 #disqus_thread {
   clear: both;
