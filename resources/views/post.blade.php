@@ -12,23 +12,23 @@
         @endif
     </section>
 
-    <section class="posts-container">
+    <div class="posts-container">
         <article class="post">
-            <div class="post-heading">
+            <section class="post-heading">
                 <h1 class="post-title">{{ $post->title }}</h1>
 
                 <div class="post-info">{{ $post->created_at }}</div>
-            </div>
-            <div class="post-content">
+            </section>
+            <section class="post-content">
                 {!! $post->html_body !!}
-            </div>
+            </section>
         </article>
-    </section>
+    </div>
 
     <section class="social pull-right">
         <div class="text">Share this post</div>
         <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(Request::url()) }}" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
-        <a class="twitter" href="https://twitter.com/intent/tweet?url={{ urlencode(Request::url()) }}&text={{ urlencode($post->title) }}%20at&via=guidsen" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+        <a class="twitter" href="https://twitter.com/intent/tweet?url={{ urlencode(Request::url()) }}&text={{ urlencode($post->title) }}&via=guidsen" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
     </section>
 
     <div id="disqus_thread"></div>

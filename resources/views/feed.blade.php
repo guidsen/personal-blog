@@ -9,23 +9,23 @@ If you want to be up to date, this blog should cover your needs!
 
 @section('content')
 
-    <section class="posts-container">
+    <div class="posts-container">
         @foreach($posts as $post)
             <article class="post">
-                <div class="post-heading">
+                <section class="post-heading">
                     <h2 class="post-title">
                         <a href="{{ route('post.show', ['slug' => $post->slug]) }}">{{ $post->title }}</a>
                     </h2>
 
                     <div class="post-info">{{ $post->created_at }}</div>
-                </div>
-                <div class="post-content">
+                </section>
+                <section class="post-content">
                     {!! $post->excerpt !!}
 
                     <a href="{{ route('post.show', ['slug' => $post->slug]) }}" class="read-more">Read more</a>
-                </div>
+                </section>
             </article>
         @endforeach
-    </section>
+    </div>
 
 @stop
