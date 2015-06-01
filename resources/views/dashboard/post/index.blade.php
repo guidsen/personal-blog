@@ -2,7 +2,7 @@
 
 @section('content')
     <section class="actions">
-        <a class="btn btn-primary pull-right btn-sm">Maak bericht aan <i class="fa fa-plus"></i></a>
+        <a href="{{ route('dashboard.post.create') }}" class="btn btn-primary pull-right btn-sm">Maak bericht aan <i class="fa fa-plus"></i></a>
     </section>
     <table class="table">
         <thead>

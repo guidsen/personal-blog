@@ -20,7 +20,9 @@ If you want to be up to date, this blog should cover your needs!
                     <div class="post-info">{{ $post->created_at }}</div>
                 </div>
                 <div class="post-content">
-                    {!! $post->html_body !!}
+                    {!! $post->excerpt !!}
+
+                    <a href="{{ route('post.show', ['slug' => $post->slug]) }}" class="read-more">Read more</a>
                 </div>
             </article>
         @endforeach
