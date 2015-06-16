@@ -11,6 +11,7 @@
     <meta name="keywords" content="Laravel, Lumen, Coding, Blog, Architecture, PHP">
     <!-- Facebook optimization -->
     <meta property="og:site_name" content="Guido Schmitz - Blog">
+    <meta property="og:image" content="{{ asset('images/myself.png') }}">
     <meta property="og:url" content="{{ Request::url() }}">
     <meta property="og:title" content="@yield('title')">
     <meta property="og:description" content="@yield('description')">
