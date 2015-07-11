@@ -8,7 +8,7 @@
         </p>
 
         <p>
-            Currently I'm working for a startup called Flex-Appeal.
+            Currently I'm working for a startup called <a href="http://www.flex-appeal.nl">Flex-Appeal</a>.
         </p>
 
         <p>
