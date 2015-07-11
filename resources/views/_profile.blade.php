@@ -8,11 +8,13 @@
         </p>
 
         <p>
-            Currently I'm working for a startup called <a href="http://www.flex-appeal.nl">Flex-Appeal</a>.
+            Currently I'm working for a startup called
+            <a href="http://www.flex-appeal.nl" target="_blank">Flex-Appeal</a>.
         </p>
 
         <p>
-            You can find me at twitter <a href="https://twitter.com/guidsen" target="_blank">@guidsen</a> or connect me via <a href="https://www.linkedin.com/in/guidschmitz" target="_blank">LinkedIn</a>.
+            You can find me at twitter <a href="https://twitter.com/guidsen" target="_blank">@guidsen</a> or connect me
+            via <a href="https://www.linkedin.com/in/guidschmitz" target="_blank">LinkedIn</a>.
         </p>
     </div>
 </section>
