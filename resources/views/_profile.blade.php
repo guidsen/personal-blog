@@ -4,7 +4,7 @@
     <div class="profile-info">
         <p>
             Hi, my name is Guido Schmitz. <br>
-            I'm a web developer and Laravel fanboy trying to keep up with the latest coding trends.
+            I'm a web developer trying to keep up with the latest coding trends.
         </p>
 
         <p>

@@ -23,12 +23,12 @@
 <body>
 
 <div class="profile-container fluid-container">
-    <div class="col-md-8 col-md-offset-2">
+    <div class="col-xs-8 col-xs-offset-2">
         @include('_profile')
     </div>
 </div>
 
-<div class="col-md-8 col-md-offset-2">
+<div class="col-xs-8 col-xs-offset-2">
     @yield('content')
 </div>
 <script src="scripts/prism.js" type="text/javascript"></script>
